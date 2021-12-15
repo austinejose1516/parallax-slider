@@ -4,7 +4,9 @@ let sliderWidth;
 let imageWidth;
 let current = 0;
 let target = 0;
-let ease = 0.03;
+let ease = 0.05;
+
+window.addEventListener('resize', init)
 
 // Adding background images to the divs
 images.forEach((image, index) => {
